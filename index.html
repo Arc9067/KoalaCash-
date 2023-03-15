@@ -19,6 +19,7 @@
       src="https://kit.fontawesome.com/22d9f2c7a2.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="https://voltichange.net/css/widget.css" />
     <title>koala Cash</title>
   </head>
   <body>
@@ -120,8 +121,18 @@
             </div>
           </div>
         </section>
+
+        <!-- 2. Place this iframe tag at the location where the Voltichange Widget will be:  -->
+        <iframe
+          src="https://voltichange.net/api/widget/?chain=1&darktheme=true&tokenin=Native&tokenout=&slippage=0.5"
+          frameborder="0"
+          class="voltichange-widget"
+        ></iframe>
+
+        <!-- END OF VOLTICHANGE WIDGET CODE -->
       </div>
     </main>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

@@ -97,7 +97,7 @@ body {
   }
 
   .header-nav {
-    position: absolute;
+    position: fixed;
     z-index: 10000;
     right: -100%;
     top: 0;
@@ -242,6 +242,9 @@ main {
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
+    scroll-snap-destination: flex;
+    flex-direction: column;
+    row-gap: 20px;
 
     #home {
       // background-color: red;
@@ -355,7 +358,11 @@ main {
       width: 100%;
       background-color: var(--body-clr);
       padding-top: 50px;
-
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       h1 {
         font-weight: var(--bold);
         font-size: var(--biggest-font-size);
@@ -365,6 +372,7 @@ main {
         transform: skewY(2deg);
         background-color: var(--clr-3);
         color: var(--clr-1);
+        width: max-content;
       }
       p {
         color: var(--white);
