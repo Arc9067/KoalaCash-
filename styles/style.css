@@ -30,6 +30,7 @@
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
+  --text-width: 400px;
   /*========== Font weight ==========*/
   --thin: 300;
   --regular: 400;
@@ -238,6 +239,7 @@ main .inner-main #home {
   flex-direction: column;
   padding-top: 20px;
   position: relative;
+  align-items: center;
 }
 main .inner-main #home i[class*=abso] {
   position: absolute;
@@ -256,6 +258,7 @@ main .inner-main #home h1 {
   font-weight: var(--bold);
   font-size: var(--biggest-font-size);
   color: var(--white);
+  text-align: center;
 }
 main .inner-main #home h1 span {
   display: inline-block;
@@ -274,6 +277,7 @@ main .inner-main #home h1 span:after {
 }
 main .inner-main #home p {
   color: var(--white);
+  max-width: var(--text-width);
 }
 main .inner-main #home .btn-div {
   width: -moz-max-content;
@@ -322,6 +326,8 @@ main .inner-main #home .home-img {
 }
 main .inner-main #home .home-img img {
   z-index: 2;
+  max-width: 25rem;
+  margin: 0 auto;
 }
 main .inner-main #home .home-img::before {
   content: "";
@@ -334,7 +340,6 @@ main .inner-main #home .home-img::before {
   filter: blur(201px);
 }
 main .inner-main #about {
-  min-height: 100vh;
   width: 100%;
   background-color: var(--body-clr);
   padding-top: 50px;
@@ -378,6 +383,20 @@ main .inner-main #about .row div h2 {
   text-transform: capitalize;
   color: var(--white);
   word-break: keep-all;
+}
+main .inner-main iframe {
+  margin: 0 auto;
+}
+main footer {
+  width: 100vw;
+  height: 70px;
+  border-top: 1px solid #9c3b39;
+  display: grid;
+  place-items: center;
+}
+main footer p {
+  text-align: center;
+  color: var(--white);
 }
 
 @media (min-width: 700px) {
